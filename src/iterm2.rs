@@ -344,7 +344,7 @@ mod tests {
 
     #[test]
     fn works() {
-        let plist_bytes = include_bytes!("../../../Downloads/Untitled.itermcolors");
+        let plist_bytes = include_bytes!("../tests/data/iterm2-theme.itermcolors");
 
         let theme = plist::from_bytes::<ITerm2TerminalTheme>(plist_bytes);
 
